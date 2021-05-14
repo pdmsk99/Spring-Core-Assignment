@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context/ 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <beans>
+    <bean id="Custmr" class="Custmr">
+      <property name="customerId" value="1234"></property>
+    <property name="customerName" value="sai"></property>
+        <property name="customerContact" value="9581495496"></property>
+        <property name="customerAdd" ref="Add"></property>
+    
+    </bean>
+    
+    
+    
+    <bean id="Add" class="Add">
+      <property name="street" value="banjarahills"></property>
+    <property name="city" value="HYD"></property>
+        <property name="zip" value="500007"></property>
+        <property name="country" value="India"></property>
+    
+    </bean>
+    
+    
+    
+    </beans>
+    
+    </beans>
